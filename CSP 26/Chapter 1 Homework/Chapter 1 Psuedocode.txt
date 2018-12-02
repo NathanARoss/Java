@@ -1,0 +1,93 @@
+ 
+/**
+Purpose
+   Calculate total cost of a sale after sales tax
+
+Input
+   Price & tax rate
+
+Process
+   Multiply tax rate by price
+   Add sales tax to price
+
+Output
+   Sales tax and total sale
+
+Nathan Ross
+Last edited 1-31-27
+*/
+
+Function main
+   Declare Real price
+   Declare Real taxRate
+   Declare Real salesTax
+   Declare Real totalSale
+   
+   Display "Enter retail price: $"
+   Input price
+   
+   Display "Enter tax rate (e.g. 0.09): "
+   Input taxRate
+   
+   Set salesTax = price * taxRate
+   Set totalSale = price + salesTax
+   
+   Display "Sales tax : $", salesTax
+   Display "Total sale: $", totalSale
+End Main
+
+
+
+
+
+
+
+
+
+
+
+/**
+Purpose
+   Calculate a saving account balance at the end of a month
+
+Input
+   Starting balance, deposits, withdrawals, interest rate
+
+Process
+   Multiply interest rate by starting balance
+   Add deposits, -withdrawals, and interest payment to balance
+
+Output
+   Interest payment, updated balance
+
+Nathan Ross
+Last edited 1-31-27
+*/
+
+Function main
+   Declare Real oldBalance, newBalance
+   Declare Real deposits, withdrawals
+   Declare Real interestRate, interestPayment 
+   
+   Display "Enter starting balance: $"
+   Input oldBalance
+
+   Display "Enter total deposits: "
+   Input deposits
+
+   Display "Enter total withdrawals: "
+   Input withdrawals
+   
+   Display "Enter monthly interest rate (e.g. 0.01): "
+   Input taxRate
+   
+   Set interestPayment = oldBalance * interestRate
+   Set newBalance = oldBalance + deposits – withdrawals
+   Set newBalance = newBalance + interestPayment
+   
+   Display "Old balance     : $", oldBalance
+   Display "Deposits        : $", deposits
+   Display "Withdrawals     : $", withdrawals
+   Display "Interest payment: $", interestPayment
+   Display "New balance     : $", newBalance
+End Main

@@ -1,0 +1,4 @@
+Number of years tested: 3
+Total inches of rainfall: 234.0
+Average monthly rainfall: 6.5
+
